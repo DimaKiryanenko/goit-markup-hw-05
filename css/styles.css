@@ -579,27 +579,32 @@ ul {
 
 .doing-secondary {
   position: relative;
+}
+
+.doing-text-test {
   display: flex;
-  text-align: center;
-  margin: auto;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .doing-text {
-  position: absolute;
+  display: inline-block;
+
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin: 0;
-  bottom: 0;
-  padding-top: 27px;
-
-  width: 100%;
-  height: 70px;
 
   color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .backdrop {
@@ -707,6 +712,7 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  margin: 0;
 }
 
 .footer-countainer {
@@ -745,6 +751,7 @@ footer {
 }
 
 .itfi {
+  display: block;
   color: rgba(255, 255, 255, 0.1);
   fill: currentColor;
 
@@ -795,7 +802,7 @@ button {
   background: var(--primari-white-color);
 }
 
-.item-button {
+.buttons {
   text-decoration: none;
   border: solid 1px transparent;
   border-radius: 4px;
@@ -817,7 +824,7 @@ button {
 }
 
 .buttons:focus,
-.item-button:hover {
+.buttons:hover {
   color: var(--batton-bg-color);
   background: var(--primari-click-color);
 
